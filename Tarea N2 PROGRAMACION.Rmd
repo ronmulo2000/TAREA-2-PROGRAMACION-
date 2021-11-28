@@ -1,0 +1,132 @@
+---
+title: "TAREA N2 PROGRA"
+author: "Romulo Fabian Montes Reymondez"
+date: "27/11/2021"
+output: html_document
+---
+
+
+## ejercicio 1
+
+```{r}
+a <- 10000/3
+b <- round(a)
+10000 - 3*b
+```
+## ejercicio 2
+
+```{r}
+num <- 4560
+
+ifelse(num %% 3, "NO Divisible", " divisible")
+num <- 4560
+
+ifelse(num %% 3, "NO Divisible", " divisible")
+```
+## ejercicio 3
+
+```{r}
+V <- c(2:87)
+b <-seq(0,87,7)
+b[-1]
+```
+## ejercicio 4
+
+```{r}
+vector1 <- c(7:3)
+
+ifelse(vector1 %% 2, "impar", " par")
+ifelse(vector1 > 10,"verdad", " falso") 
+
+vector2 <- c(5, 10, 15, 20, 25)
+
+ifelse(vector2 %% 2, "impar", " par")
+ifelse(vector2 > 10,"verdad", " falso")
+```
+## ejercicio 6
+
+```{r}
+vector01 <- c(1, -4, 5, 9,-4)
+vector01
+which.min(vector01)
+min(vector01)
+```
+## ejercicio 7
+
+```{r}
+factorial(8)
+```
+## ejercicio 8
+
+```{r}
+sum(sumatoria<-exp(3:7))
+```
+## ejercicio 9
+
+```{r}
+vector09 <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+prod(log(sqrt(vector09)))
+```
+## ejercicio 10
+
+```{r}
+((1/2)*(R^2))*(((pi*θ)/180)-sin(θ))
+((1/2)*(2^2))*(((pi*30)/180)-sin(30))
+```
+## ejercicio 11
+
+```{r}
+vector<-c(8,9,10,11,12)
+vector
+w<-which(vector ==c(8,9,10,11,12))
+u.u[order(-w)]
+R<-sort(u.u,TRUE)
+vector[R]
+rev(vector)
+```
+## ejercicio 12
+
+```{r}
+(10:100)**3
+4*(10:100)**2
+sum(a)+sum(b)
+```
+## ejercicio 13
+
+```{r}
+2**(1:25)/(1:25)
+3*(1:25)/(1:25)*2
+sum(a)+sum(b)
+```
+## ejercicio 14
+
+```{r}
+url<- "https://raw.githubusercontent.com/fhernanb/datos/master/Paises.txt"
+download.file(url,"mi_archivo.txt")
+GO<-read.delim("C:/Users/Nitro 5}/OneDrive/Documentos/Programación/Nueva carpeta/mi_archivo.txt",TRUE)
+GO
+apply(GO[c("poblacion")],2,max)
+MAX<-max(GO$poblacion)
+y<-c(GO$poblacion)
+GO$Pais[which.max(y)]
+j<-min(GO$alfabetizacion)
+GO$Pais[which(GO$alfabetizacion==j)]
+```
+## ejercicio 15
+
+```{r}
+mtcars[mtcars$mpg<18,]   ##a
+mtcars[mtcars$cyl==4,]   ##b
+mtcars[mtcars$wt>2.500 & mtcars$am==1,]   ##c
+```
+## ejercicio 16
+
+```{r}
+x<-seq(0,365)
+y<-2*pi*(x-81)/365
+max(y)
+min(y)
+b<-min(y):max(y)
+a<-9.87*sin(2*y)-7.53*cos(y)-1.5*sin(y)
+plot(a,type="b",col="purple",font=2,ylab="Minutos",xlab="Meses")
+```
