@@ -19,7 +19,8 @@ prod(log(sqrt(vector09)))
 # θ = 30
 # R = 2
 ((1/2)*(2^2))*(((pi*30)/180)-sin(30))
-
+summary(1,2)
+# hola 
 
                  
                    
